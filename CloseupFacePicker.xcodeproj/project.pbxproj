@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		8449C40F20B7CC3A00266C23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8449C40E20B7CC3A00266C23 /* AppDelegate.swift */; };
-		8449C41120B7CC3A00266C23 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8449C41020B7CC3A00266C23 /* ViewController.swift */; };
 		8449C41420B7CC3A00266C23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8449C41220B7CC3A00266C23 /* Main.storyboard */; };
 		8449C41620B7CC4000266C23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8449C41520B7CC4000266C23 /* Assets.xcassets */; };
 		8449C41920B7CC4000266C23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8449C41720B7CC4000266C23 /* LaunchScreen.storyboard */; };
+		84F3693720BD1486004E9177 /* FacepickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F3693620BD1486004E9177 /* FacepickerController.swift */; };
+		84F3693920BD1AFC004E9177 /* DemonstrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F3693820BD1AFC004E9177 /* DemonstrationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8449C40B20B7CC3A00266C23 /* CloseupFacePicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloseupFacePicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8449C40E20B7CC3A00266C23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8449C41020B7CC3A00266C23 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8449C41320B7CC3A00266C23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8449C41520B7CC4000266C23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8449C41820B7CC4000266C23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8449C41A20B7CC4000266C23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84F3693620BD1486004E9177 /* FacepickerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacepickerController.swift; sourceTree = "<group>"; };
+		84F3693820BD1AFC004E9177 /* DemonstrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemonstrationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +57,8 @@
 			isa = PBXGroup;
 			children = (
 				8449C40E20B7CC3A00266C23 /* AppDelegate.swift */,
-				8449C41020B7CC3A00266C23 /* ViewController.swift */,
+				84F3693620BD1486004E9177 /* FacepickerController.swift */,
+				84F3693820BD1AFC004E9177 /* DemonstrationViewController.swift */,
 				8449C41220B7CC3A00266C23 /* Main.storyboard */,
 				8449C41520B7CC4000266C23 /* Assets.xcassets */,
 				8449C41720B7CC4000266C23 /* LaunchScreen.storyboard */,
@@ -135,7 +138,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8449C41120B7CC3A00266C23 /* ViewController.swift in Sources */,
+				84F3693720BD1486004E9177 /* FacepickerController.swift in Sources */,
+				84F3693920BD1AFC004E9177 /* DemonstrationViewController.swift in Sources */,
 				8449C40F20B7CC3A00266C23 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

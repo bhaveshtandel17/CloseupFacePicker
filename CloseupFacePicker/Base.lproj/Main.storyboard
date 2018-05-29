@@ -1,60 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="P7d-ca-hJq">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Demonstration View Controller-->
+        <scene sceneID="stZ-uw-6cz">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CloseupFacePicker" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController id="P7d-ca-hJq" customClass="DemonstrationViewController" customModule="CloseupFacePicker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="z2w-BZ-oot">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DwO-cf-w2I">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <subviews>
-                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="demo" translatesAutoresizingMaskIntoConstraints="NO" id="qWz-as-d1S">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                    </imageView>
-                                </subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XuC-io-iOb">
+                                <rect key="frame" x="146" y="318" width="83" height="30"/>
+                                <state key="normal" title="Detect Face"/>
+                                <connections>
+                                    <action selector="detectFaceBtnClicked:" destination="P7d-ca-hJq" eventType="touchUpInside" id="Zd5-gn-L4u"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YBy-6j-vte">
+                                <rect key="frame" x="112" y="368" width="150" height="150"/>
                                 <constraints>
-                                    <constraint firstItem="qWz-as-d1S" firstAttribute="centerY" secondItem="DwO-cf-w2I" secondAttribute="centerY" id="8Hw-r9-qri"/>
-                                    <constraint firstItem="qWz-as-d1S" firstAttribute="top" secondItem="DwO-cf-w2I" secondAttribute="top" id="Kqp-1K-6aV"/>
-                                    <constraint firstItem="qWz-as-d1S" firstAttribute="leading" secondItem="DwO-cf-w2I" secondAttribute="leading" id="Nw6-QJ-GTm"/>
-                                    <constraint firstAttribute="bottom" secondItem="qWz-as-d1S" secondAttribute="bottom" id="cxy-i6-Zkj"/>
-                                    <constraint firstAttribute="trailing" secondItem="qWz-as-d1S" secondAttribute="trailing" id="kKK-to-rbY"/>
-                                    <constraint firstItem="qWz-as-d1S" firstAttribute="centerX" secondItem="DwO-cf-w2I" secondAttribute="centerX" id="rax-1c-Bk7"/>
+                                    <constraint firstAttribute="width" constant="150" id="71g-cl-5ka"/>
+                                    <constraint firstAttribute="width" secondItem="YBy-6j-vte" secondAttribute="height" multiplier="1:1" id="YnM-5O-sZ6"/>
                                 </constraints>
-                            </scrollView>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="DwO-cf-w2I" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="EaJ-b0-gqt"/>
-                            <constraint firstItem="DwO-cf-w2I" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="GiA-MM-S42"/>
-                            <constraint firstItem="DwO-cf-w2I" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="WzH-Ba-bP0"/>
-                            <constraint firstAttribute="trailing" secondItem="DwO-cf-w2I" secondAttribute="trailing" id="XUw-Af-2rw"/>
+                            <constraint firstItem="XuC-io-iOb" firstAttribute="centerY" secondItem="z2w-BZ-oot" secondAttribute="centerY" id="6BW-CZ-g4b"/>
+                            <constraint firstItem="YBy-6j-vte" firstAttribute="top" secondItem="XuC-io-iOb" secondAttribute="bottom" constant="20" id="Yrv-0l-Oe7"/>
+                            <constraint firstItem="YBy-6j-vte" firstAttribute="centerX" secondItem="XuC-io-iOb" secondAttribute="centerX" id="Z3S-aK-IAw"/>
+                            <constraint firstItem="XuC-io-iOb" firstAttribute="centerX" secondItem="z2w-BZ-oot" secondAttribute="centerX" id="ySU-Qa-reW"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <viewLayoutGuide key="safeArea" id="psj-qr-s0x"/>
                     </view>
                     <connections>
-                        <outlet property="imageView" destination="qWz-as-d1S" id="EwG-Rq-QRX"/>
-                        <outlet property="scrollView" destination="DwO-cf-w2I" id="ftf-BJ-Cxl"/>
+                        <outlet property="croppedImageView" destination="YBy-6j-vte" id="yQu-wl-YDf"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jaZ-ar-VqH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="24.800000000000001" y="31.934032983508249"/>
+            <point key="canvasLocation" x="770" y="32"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="demo" width="480" height="398"/>
-    </resources>
 </document>
