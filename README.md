@@ -1,6 +1,6 @@
 # FacepickerController
 
-<img class="center" src="./Resources/giphy.gif">
+<img class="center" src="./Resources/FacepickerControllerDemo.gif">
 
 `FacepickerController` is a an open-source `UIViewcontroller` subclass build to allow user to crop image, specifically cropping is based on human face.  `Core Image's` face detection feature used to detect faces. `FacepickerController` is easy to install and use.
 
